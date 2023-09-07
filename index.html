@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>For Ladies</title>
-    <script src="booklet.js"></script>
+    <script src="personalBoundaries.js" async></script>
+    <script src="complements.js" async></script>
+    <script src="tableSetting.js" async></script>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="personalBoundaries personalBoundaries-color">
       <div class="personalBoundaries__title">Как быть леди?</div>
-      <div class="card">
+      <div class="personalBoundaries__card">
         <div id="note">
           #мудростьдня<span id="dots">...</span> <br /><span id="more">
             Леди поддерживает положительное настроение другого, а не разрушает
@@ -21,9 +24,9 @@
       <button id="button" onclick="readMore()">Прочитать полностью</button>
       <div class="personalBoundaries__subtitle">Личные границы</div>
       <div class="personalBoundaries__article">
-        🧘‍♀️ 1. Изучите себя. Подумайте, что для вас важно, какие моменты
-        вызывают дискомфорт, и научитесь четко и адекватно выражать свои
-        ощущения, а также бережно относиться к своим внутренним потребностям.<br />
+        🧘‍♀️ 1. Изучите себя. Подумайте, что для вас важно, какие моменты вызывают
+        дискомфорт, и научитесь четко и адекватно выражать свои ощущения, а
+        также бережно относиться к своим внутренним потребностям.<br />
 
         🙅‍♀️ 2. Учитесь говорить "нет". Умение отказывать важно для сохранения
         ваших личных границ. Говорите "нет" вежливо, без оправданий, если что-то
@@ -55,33 +58,55 @@
     <div class="complements complements-color">
       <div class="complements__card">
         <div class="complements__note">
-          #психологияледи<span id="complements__dots">...</span> <br /><span id="complements__more">
+          #психологияледи<span id="complements__dots">...</span> <br /><span
+            id="complements__more"
+          >
             Если эмоции начали управлять вами, а не вы ими, это повод задуматься
             о паузе...☝️</span
           >
         </div>
       </div>
-      <button id="complements__button" onclick="readMore1()">Прочитать полностью</button>
+
+      <button id="complements__button" onclick="readMore1()">
+        Прочитать полностью
+      </button>
       <div class="complements__subtitle">Комплименты</div>
 
-      <div class="carousel" id="carousel">
-            <button class="arrow prev">⇦</button>
-            <div class="gallery">
-              <ul>
-                <li><img src=""></li>
-                <li><img src=""></li>
-                <li><img src=""></li>
-              </ul>
-            </div>
-            <button class="arrow next">⇨</button>
-          </div>
+      <div id="carousel" class="carousel">
+        <button class="arrow prev">⇦</button>
+        <div class="gallery">
+          <ul class="list">
+            <li><img class="carousel__image" src="images/carousel1.jpg" /></li>
+            <li><img class="carousel__image" src="images/carousel2.jpg" /></li>
+            <li><img class="carousel__image" src="images/carousel3.jpg" /></li>
+          </ul>
+        </div>
+        <button class="arrow next">⇨</button>
       </div>
     </div>
 
-    <div class="tableSetting">
-      <div class="tableSetting__subtitle"></div>
-      <div class="tableSetting__note"></div>
-      <div class="tableSetting__trainingApparatus"></div>
+    <div class="tableSetting tableSetting__color">
+      <div class="tableSetting__subtitle">Сервировка стола</div>
+      <div class="tableSetting__card">
+        <div class="tableSetting__note">
+          <nobr>#психологияледи<span id="tableSetting__dots">...</nobr></span> <br /><span
+            id="tableSetting__more"
+          >
+            Если эмоции начали управлять вами, а не вы ими, это повод задуматься
+            о паузе...☝️</span
+          >
+        </div>
+      </div>
+      <button id="tableSetting__button" onclick="readMore2()">
+        Прочитать полностью
+      </button>
+
+      <div class="tableSetting__trainingApparatus">
+        <img src="https://en.js.cx/clipart/soccer-gate.svg" id="platePlace" class="droppable">
+
+        <img src="https://en.js.cx/clipart/ball.svg" id="plate">
+
+      </div>
     </div>
   </body>
 </html>
