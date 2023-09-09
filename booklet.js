@@ -1,7 +1,7 @@
 function readMore() {
-  let dots = document.getElementById("dots");
-  let more = document.getElementById("more");
-  let button = document.getElementById("button");
+  let dots = document.getElementById("content__dots");
+  let more = document.getElementById("content__more");
+  let button = document.getElementById("content__button");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -17,9 +17,9 @@ function readMore() {
 // =================================================================================================
 
 function readMore1() {
-  let dots = document.getElementById("complements__dots");
-  let more = document.getElementById("complements__more");
-  let button = document.getElementById("complements__button");
+  let dots = document.getElementById("content__dots");
+  let more = document.getElementById("content__more");
+  let button = document.getElementById("content__button");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -65,9 +65,9 @@ carousel.querySelector(".next").onclick = function () {
 // ==========================================================================================================
 
 function readMore2() {
-  let dots = document.getElementById("tableSetting__dots");
-  let more = document.getElementById("tableSetting__more");
-  let button = document.getElementById("tableSetting__button");
+  let dots = document.getElementById("content__dots");
+  let more = document.getElementById("content__more");
+  let button = document.getElementById("content__button");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
