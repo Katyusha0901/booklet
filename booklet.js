@@ -14,6 +14,25 @@ function readMore() {
   }
 }
 
+const containers = document.querySelectorAll(".dropdown");
+for (let container of containers) {
+  container.addEventListener("click", function readMore() {
+    let dots = container.querySelector(".dropdown__dots");
+    let more = container.querySelector(".dropdown__more");
+    let button = container.querySelector(".dropdown__button");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      button.innerHTML = "Читать полностью";
+      more.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      button.innerHTML = "Скрыть";
+      more.style.display = "inline";
+    }
+  });
+}
+
 // =================================================================================================
 
 function readMore1() {

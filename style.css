@@ -30,14 +30,14 @@
   margin-bottom: 20px;
 }
 
-#content__note {
+.dropdown__note {
   font-size: 30px;
   font-weight: 400;
   z-index: 2;
   text-align: center;
 }
 
-#content__more {
+.dropdown__more {
   display: none;
   font-size: 20px;
   white-space: 5px;
@@ -54,19 +54,19 @@
   padding: 10px;
 }
 
-.content__card {
+.dropdown {
   background-color: rgb(247, 241, 241);
   width: 250px;
   padding: 10px;
   margin: 30px 200px 0px;
   display: flex;
   align-self: flex-end;
+  flex-direction: column;
 }
 
-#content__button {
+.dropdown__button {
   margin-top: 2px;
-  margin-right: 200px;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .content_blue {
