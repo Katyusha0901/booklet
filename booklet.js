@@ -53,22 +53,6 @@ carousel.querySelector(".next").onclick = function () {
 
 // ==========================================================================================================
 
-function readMore2() {
-  let dots = document.getElementById("content__dots");
-  let more = document.getElementById("content__more");
-  let button = document.getElementById("content__button");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    button.innerHTML = "Читать полностью";
-    more.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    button.innerHTML = "Скрыть";
-    more.style.display = "inline";
-  }
-}
-
 let currentDroppable = null;
 
 const platePlace = document.querySelector("#platePlace");
