@@ -1,18 +1,4 @@
-function readMore() {
-  let dots = document.getElementById("content__dots");
-  let more = document.getElementById("content__more");
-  let button = document.getElementById("content__button");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    button.innerHTML = "Читать полностью";
-    more.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    button.innerHTML = "Скрыть";
-    more.style.display = "inline";
-  }
-}
 
 const containers = document.querySelectorAll(".dropdown");
 for (let container of containers) {
@@ -34,22 +20,6 @@ for (let container of containers) {
 }
 
 // =================================================================================================
-
-function readMore1() {
-  let dots = document.getElementById("content__dots");
-  let more = document.getElementById("content__more");
-  let button = document.getElementById("content__button");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    button.innerHTML = "Читать полностью";
-    more.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    button.innerHTML = "Скрыть";
-    more.style.display = "inline";
-  }
-}
 
 const carousel = document.querySelector(".carousel");
 let list = carousel.querySelector("ul");
