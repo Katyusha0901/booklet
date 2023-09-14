@@ -97,6 +97,28 @@
       <img src="images/meal.png" id="platePlace">
     </div>
   </div>
+
+  <div class="trainingSection trainingSection_blue">
+    <div class="trainingSection__subtitle">Отправь заявку на персональную <br> рассылку советов леди</div>
+    <div class="questionnaire">
+      <p class="questionnaire__text">Ваш email:</p>
+      <input type="email" id="input" onchange="alert(this.value)">
+      <input type= "button" value="Отправить" class="questionnaire__button">
+      <div id="error"></div>
+    </div>
+    <div class="questionnaire">
+      <p class="questionnaire__text">Добавьте комментарий</p>
+      <div id="questionnaire__view" class="questionnaire__view">Текст</div>
+    </div>
+    <div class="questionnaire">
+      <p class="questionnaire__text">Укажите фамилию и имя</p>
+      <form id="form">
+        <input type="text" name="name" value="Имя" class="questionnaire__name">
+        <input type="text" name="surname" value="Фамилия" class="questionnaire__name">
+      </form>
+      <input type= "button" value="Отправить" class="questionnaire__button">
+    </div>
+  </div>
 </body>
 
 </html>

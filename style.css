@@ -9,7 +9,7 @@
 .trainingSection {
   margin: 20px 40px;
   display: flex;
-  justify-trainingSection: center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
@@ -28,6 +28,7 @@
   font-size: 45px;
   font-weight: 500;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .dropdown__note {
@@ -73,10 +74,12 @@
   background-color: rgb(148, 194, 235);
 }
 
+
+
 .carousel {
   display: flex;
   position: relative;
-  justify-trainingSection: center;
+  justify-content: center;
   width: 400px;
   height: 280px;
   padding: 10px 40px;
@@ -163,4 +166,82 @@
   cursor: pointer;
   width: 150px;
   height: 150px;
+}
+
+.invalid {
+  border-color: red;
+}
+#error {
+  color: red;
+}
+
+#input {
+  height: 50px;
+  background-color:aliceblue;
+  border-color: #ecc4e4;
+  border-radius: 10px;
+}
+
+.questionnaire {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.questionnaire__text{
+  font-size: 30px;
+  background-color:aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  color:#5c26d0;
+}
+
+.questionnaire__button {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #5c26d0;
+  color: aliceblue;
+}
+
+/* ======================================================================================================================= */
+
+.questionnaire__view,
+.edit {
+  height: 150px;
+  width: 400px;
+  font-family: sans-serif;
+  font-size: 20px;
+  display: block;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.questionnaire__view {
+  padding: 2px;
+  border: 3px solid pink;
+  background-color: rgb(249, 229, 232);
+}
+
+.edit {
+  border: 3px solid #ecc4e4;
+  padding: 15px;
+}
+
+.edit:focus {
+  outline: none;
+  background-color:aliceblue;
+}
+
+.focused { 
+  outline: 1px solid red; 
+} 
+
+.questionnaire__name {
+  height: 40px;
+  font-size: 15px;
+  background-color:aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  color:#5c26d0;
 }

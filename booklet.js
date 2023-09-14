@@ -1,5 +1,3 @@
-
-
 const containers = document.querySelectorAll(".dropdown");
 for (let container of containers) {
   container.addEventListener("click", function readMore() {
@@ -101,14 +99,56 @@ platePlace.onmousedown = function (event) {
   };
 };
 
-function enterDroppable(elem) {
-  elem.style.background = "pink";
-}
-
-function leaveDroppable(elem) {
-  elem.style.background = "";
-}
-
 platePlace.ondragstart = function () {
   return false;
 };
+
+input.onblur = function () {
+  if (!input.value.includes("@")) {
+    input.classList.add("invalid");
+    error.innerHTML = "Пожалуйста, введите правильный email.";
+  }
+};
+
+input.onfocus = function () {
+  if (this.classList.contains("invalid")) {
+    this.classList.remove("invalid");
+    error.innerHTML = "";
+  }
+};
+
+// ===========================================================================================
+
+let area = null;
+let view = document.getElementById("questionnaire__view");
+
+view.onclick = function () {
+  editStart();
+};
+
+function editStart() {
+  area = document.createElement("textarea");
+  area.className = "edit";
+  area.value = view.innerHTML;
+
+  area.onkeydown = function (event) {
+    if (event.key == "Enter") {
+      this.blur();
+    }
+  };
+
+  area.onblur = function () {
+    editEnd();
+  };
+
+  view.replaceWith(area);
+  area.focus();
+}
+
+function editEnd() {
+  view.innerHTML = area.value;
+  area.replaceWith(view);
+}
+
+form.addEventListener("focus", () => form.classList.add("focused"), true);
+form.addEventListener("blur", () => form.classList.remove("focused"), true);
