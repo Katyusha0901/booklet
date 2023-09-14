@@ -152,3 +152,7 @@ function editEnd() {
 
 form.addEventListener("focus", () => form.classList.add("focused"), true);
 form.addEventListener("blur", () => form.classList.remove("focused"), true);
+
+input.oninput = function() {
+  result.innerHTML = input.value;
+};

@@ -102,21 +102,21 @@
     <div class="trainingSection__subtitle">Отправь заявку на персональную <br> рассылку советов леди</div>
     <div class="questionnaire">
       <p class="questionnaire__text">Ваш email:</p>
-      <input type="email" id="input" onchange="alert(this.value)">
+      <input type="text" id="input"> <p class="questionnaire__text">Вы ввели:<span id="result"></span></p>
       <input type= "button" value="Отправить" class="questionnaire__button">
       <div id="error"></div>
     </div>
 
     <div class="questionnaire">
       <p class="questionnaire__text">Добавьте комментарий</p>
-      <div id="questionnaire__view" class="questionnaire__view">Текст</div>
+      <div id="questionnaire__view" class="questionnaire__view"></div>
     </div>
     
     <div class="questionnaire">
       <p class="questionnaire__text">Укажите фамилию и имя</p>
       <form id="form">
-        <input type="text" name="name" value="Имя" class="questionnaire__name">
-        <input type="text" name="surname" value="Фамилия" class="questionnaire__name">
+        <input type="text" name="name" placeholder="Имя" class="questionnaire__name">
+        <input type="text" name="surname" placeholder="Фамилия" class="questionnaire__name">
       </form>
       <input type= "button" value="Отправить" class="questionnaire__button">
     </div>
